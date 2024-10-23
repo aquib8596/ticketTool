@@ -1,0 +1,36 @@
+<section id="login">
+  <div class="login-left-side"></div>
+  <div class="login-right-side shadow">
+    <div class="login-form">
+      <h1 class="text-center">Log In</h1>
+      <h6 class="text-center">Log in to your account to continue.</h6>
+      <form class="loginForm py-5">
+        <div class="row align-items-center g-3">
+          <div class="col-12">
+            <label for="email" class="form-label">Your email</label>
+            <input
+              type="email"
+              [(ngModel)]="loginObj.emailId"
+              class="form-control"
+              name="email"
+            />
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">Password</label>
+            <input
+              type="password"
+              [(ngModel)]="loginObj.password"
+              class="form-control"
+              name="email"
+            />
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary" (click)="onLogin()">
+              login
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
